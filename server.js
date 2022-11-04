@@ -56,7 +56,7 @@ app.post('/api/buddies', (req, res)=> {
             rollbar.error("no name provided man!")
             res.status(400).send('you need to put in a name bruv')
         } else {
-            rollbar.error('fluffers name already provided')
+        rollbar.error('fluffers name already provided')
             res.status(400).send('provide a last name, same name already initialize')
         }
     } catch(err){
